@@ -15,7 +15,7 @@ namespace WpfApp1
     {
         private SaveFile f;
         private Boolean changed = false;
-        private String title = "Italian Job Save Editor";
+        private String title = "Italian Job Save Editor v0.1.1";
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace WpfApp1
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
             dlg.FileName = "res_data.dat"; // Default file name
             dlg.DefaultExt = ".dat"; // Default file extension
-            dlg.Filter = "Text documents|*.dat"; // Filter files by extension
+            dlg.Filter = "Italian Job Save|*.dat"; // Filter files by extension
 
             // Show open file dialog box
             Nullable<bool> result = dlg.ShowDialog();
